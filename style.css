@@ -32,6 +32,15 @@ html,body{
     padding-bottom:2rem;
   
 }
+@media(max-width: 600px){
+    .full-page-container{
+        padding: 1em 1em;
+    }
+    .form-container{
+        width:100%;
+        
+    }
+}
 .title{
     text-align: center;
     font-size: 2.4em;
@@ -90,5 +99,5 @@ html,body{
 .btn:hover,
 .btn:focus{
     background-color:hsla(223, 100%, 3%, 0.9); 
-    outline: hsla(220, 14%, 41%, 0.4);;
+    outline: hsla(220, 14%, 41%, 0.4);
 }
