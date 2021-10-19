@@ -28,7 +28,9 @@ html,body{
     width:60%;
     max-width:600px;
     background-color: hsla(220, 60%, 30%, .6);
+    padding: .5rem 1rem;
     padding-bottom:2rem;
+  
 }
 .title{
     text-align: center;
@@ -47,7 +49,6 @@ html,body{
     flex-direction: column;
     width: 100%;
     font-size: 1.5rem;
-    padding: .5rem 1rem;
     font-weight: 300;
 }
 .input-group label{
@@ -61,10 +62,33 @@ html,body{
     outline: none;
     border-radius:5px;
     color:hsla(221, 92%, 85%, 0.4);; 
-    transition:  background-color  350ms ease-in-out; 
+    transition:  background-color  350ms ease-in-out;
+    margin-bottom: 1.5rem; 
 }
 .input-group .input:hover,
 .input-group .input:focus{
     background-color:hsla(221, 63%, 13%, 0.9); 
+    outline: hsla(220, 14%, 41%, 0.4);;
+}
+
+/* Button design starts from here */
+.btn{
+    background-color:hsla(220, 94%, 14%, 0.8);
+    font-size: 1.1rem;
+    padding:.3rem .8rem;
+    border: 1px solid hsla(221, 68%, 70%, 0.5);
+    outline: none;
+    width:100%;
+    border-radius:5px;
+    color:hsla(0, 0%, 100%);; 
+    transition:  background-color  350ms ease-in-out;
+    margin-top:.5rem; 
+    cursor:pointer;
+    padding:.5rem;
+    letter-spacing: 2px;
+}
+.btn:hover,
+.btn:focus{
+    background-color:hsla(223, 100%, 3%, 0.9); 
     outline: hsla(220, 14%, 41%, 0.4);;
 }
