@@ -1,3 +1,64 @@
 *, *::after, *::before{
     box-sizing: border-box;
 }
+html,body{
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.full-page-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    
+    background-image: url("https://unsplash.it/500/700?gravity=center");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsla(0, 3%, 6%, 0.6);
+    background-blend-mode: multiply; 
+}
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    color:hsl(0, 0%, 82%);
+
+    width:60%;
+    max-width:700px;
+    background-color: hsla(220, 60%, 30%, .6);
+    padding-bottom:2rem;
+}
+.title{
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    font-weight: 300;
+}
+.input-group label{
+    margin-bottom:.3rem;
+}
+.input-group .input{
+    background-color:hsla(221, 63%, 13%, 0.4);
+    font-size: 1.4rem;
+    padding:.3rem .8rem;
+    border: 1px solid hsla(221, 68%, 70%, 0.5);
+    outline: none;
+    border-radius:5px;
+    color:hsla(221, 92%, 85%, 0.4);; 
+    transition: 350ms ease-in-out; 
+}
+.input-group .input:hover,
+.input-group .input:focus{
+    background-color:hsla(221, 63%, 13%, 0.9); 
+    outline: hsla(220, 14%, 41%, 0.4);;
+}
